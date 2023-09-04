@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text editor website - kr.amit singh |</title>
     <link rel="stylesheet" href="texteditor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+    <!-- font icon link -->
+    <script src="https://kit.fontawesome.com/a699bcecaa.js" crossorigin="anonymous"></script>
+    
+
 </head>
+
 <body>
     <div class="header">
         <h1>Text Editor Website</h1>
+        <div class="night-mode"><span class="sun"><i class="fa-solid fa-sun fa-xl" style="color: #f50000;"></i></span>
+            <span class="moon"><i class="fa-solid fa-moon fa-xl" style="color: #ff0000;"></i></span></div>
+        
     </div>
-    <div class="screen"><p class="para">m</p></div>
+    <div class="screen">
+        <p class="para"></p>
+    </div>
     <div class="text-editor">
-        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        <textarea name="textarea" id="textarea"></textarea>
     </div>
     <script src="texteditor.js"></script>
 </body>
+
 </html>
