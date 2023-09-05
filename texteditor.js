@@ -6,16 +6,13 @@ textarea.addEventListener("input", function (){
 });
 
 // dark mode javascript start here
-let icon = document.querySelector(".fa-sun");
-let moonIcon = document.querySelector(".fa-moon");
+let icon = document.querySelector(".sun");
 icon.onclick = function(){
-    document.body.classList.toggle("night-mode");
-    // if(document.body.classList.contains("night-mode")){
-    // icon.style.visibility = "visible";
-    // moonicon.style.visibility = "hidden";
-    // }
-    // else{
-    //     icon.style.visibility = "hidden";
-    // moonicon.style.visibility = "visible";
-    // }
+    document.body.classList.toggle("dark-mode");
+    if(document.body.classList.contains("dark-mode")){
+       icon.src = "/asset/moon.png"
+    }
+    else{
+        icon.src = "/asset/sun.png"
+    }
 }
